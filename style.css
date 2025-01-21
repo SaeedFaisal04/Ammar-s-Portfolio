@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+     padding: 0px;
+     margin: 0px;
+     font-family: "poppins";
+
+}
+
+:root {
+     --main-color: #c38d5a
+}
+
+html {
+     font-size: 62.5%;
+     overflow-x: hidden;
+}
+
+.header {
+     position: fixed;
+     width: 100%;
+     top: 0;
+     right: 0;
+     z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem 5%;
+     background-color: #c38d5a;
+     transition: all 0;
+}
+
+section {
+     min-height: 100vh;
+     padding: 10rem 9% 2rem;
+}
+
+
+.navbar a {
+     color: white;
+     text-decoration: none;
+     font-size: 1.9rem;
+     color: white;
+     margin-left: 4rem;
+     font-weight: 700;
+     transition: 0.3s ease;
+
+}
+
+.logo {
+     font-size: 3rem;
+     font-weight: 700;
+     cursor: pointer;
+     transition: 0.3s ease;
+     position: relative;
+     left: 140px;
+     color: white;
+     text-decoration: none;
+}
+
+.logo:hover {
+     transform: scale(1.05);
+}
+
+
+
+.navbar a:hover {
+     color: black;
+}
+
+.home {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.image img {
+     width: 25vw;
+     border-radius: 50%;
+     box-shadow: 0 0 25px var(--main-color);
+     cursor: pointer;
+     animation: floatImage 4s ease-in-out infinite;
+     transition: 0.4s ease;
+}
+
+.image img:hover {
+     box-shadow: 0 0 25px var(--main-color),
+          0 0 35px var(--main-color),
+          0 0 45px var(--main-color);
+}
+
+@keyframes floatImage {
+     0% {
+          transform: translate(0)
+     }
+
+     50% {
+          transform: translateY(-2.4rem);
+     }
+
+     100% {
+          transform: translateY(0)
+     }
+}
+
+.home {
+     margin-left: 2rem;
+}
+
+
+
+
+.home-content {
+     margin-left: 5rem;
+}
+
+.home-content h3 {
+     font-size: 37px;
+     font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+     margin-bottom: 2rem;
+}
+
+span {
+     color: var(--main-color)
+}
+
+.home-content h1 {
+     font-size: 55px;
+     font-weight: 700;
+     line-height: 1.3;
+
+}
+
+.home-content p {
+     font-size: 20px;
+}
+
+.social-media a {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 42px;
+     height: 42px;
+     background: transparent;
+     border: 0.2rem solid var(--main-color);
+     border-radius: 50%;
+     font-size: 2rem;
+     color: var(--main-color);
+     text-decoration: none;
+     margin: 3rem 1.5rem 3rem 0;
+     transition: 0.3s ease;
+
+}
+
+.social-media a:hover {
+     transform: scale(1.2) translateY(-10px);
+     background-color: var(--main-color);
+     color: white;
+     box-shadow: 0 0 25px var(--main-color);
+}
+
+.btn {
+     display: inline-block;
+     text-decoration: none;
+     background-color: var(--main-color);
+     color: white;
+     font-weight: 600;
+     font-size: 1.6rem;
+     padding: 1rem 2.8rem;
+     border-radius: 4rem;
+     box-shadow: none;
+     transition: 0.3s ease;
+     letter-spacing: 0.1rem;
+
+}
+
+.btn:hover {
+     box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+
+.about {
+     height: 25vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     background-color: #eedccb;
+     gap: 2rem;
+}
+
+.about-img img {
+     width: 20vw;
+     border-radius: 50%;
+     box-shadow: 0 0 25px var(--main-color);
+     cursor: pointer;
+     animation: floatImage 4s ease-in-out infinite;
+     transition: 0.4s ease;
+
+}
+
+.about-img img:hover {
+     box-shadow: 0 0 25px var(--main-color),
+          0 0 35px var(--main-color),
+          0 0 45px var(--main-color);
+}
+
+.heading {
+     font-size: 60px;
+     font-weight: 700;
+     position: relative;
+     right: 0;
+
+
+}
+
+.about-content {
+     padding: 0 4rem;
+}
+
+.about-content h2 {
+     text-align: left;
+     line-height: 1.2;
+
+}
+
+.about-content p {
+     font-size: 1.6rem;
+     margin: 2rem 0 3rem;
+}
+
+.about-content h3 {
+     font-size: 30px;
+     font-weight: 700;
+
+
+}
+
+.about-content h2 {
+     display: flex;
+}
+
+
+.about-content a {
+     display: inline-block;
+     text-decoration: none;
+     background-color: var(--main-color);
+     color: white;
+     font-weight: 600;
+     font-size: 1.6rem;
+     padding: 1rem 2.8rem;
+     border-radius: 4rem;
+     box-shadow: none;
+     transition: 0.3s ease;
+     letter-spacing: 0.1rem;
+
+}
+
+.about-content a:hover {
+     box-shadow: 0 0 1.6rem var(--main-color);
+}
+
+.services h2 {
+     margin-bottom: 5rem;
+
+}
+
+.services-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 2rem;
+}
+
+.services-container .service-box {
+     flex: 1 1 30rem;
+     background-color: #eedccb;
+     padding: 6rem 2rem 6rem;
+     border-radius: 2rem;
+     text-align: center;
+     border: 0.3rem solid #eedccb;
+     transition: 0.3s ease;
+     cursor: pointer;
+}
+
+.service-box .services-container:hover {
+     border-color: var(--main-color);
+     transform: scale(1.02);
+}
+
+.service-box h3 {
+     font-size: 2.6rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.heading {
+     display: flex;
+     justify-content: center;
+     gap: 15px;
+     font-size: 60px;
+     font-weight: 600;
+}
+
+.service-box a {
+     display: inline-block;
+     text-decoration: none;
+     background-color: var(--main-color);
+     color: white;
+     font-weight: 600;
+     font-size: 1.6rem;
+     padding: 1rem 2.8rem;
+     border-radius: 4rem;
+     box-shadow: none;
+     transition: 0.3s ease;
+     letter-spacing: 0.1rem;
+     position: relative;
+     margin-top: 25px;
+
+
+}
+
+.service-box a:hover {
+     box-shadow: 0 0 1.6rem var(--main-color);
+
+}
+
+
+
+.services-container .service-box:hover {
+     transform: translateY(-10px);
+     border-color: #d4b89f;
+     /* Slightly darker border on hover */
+     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.service-box i {
+     font-size: 7rem;
+     color: var(--main-color);
+}
+
+.service-box p {
+     font-size: 1.5rem;
+     margin: 1rem 0 3rem;
+}
+
+#App {
+     height: 312px;
+}
+
+#App a {
+     position: relative;
+     top: 23px;
+}
+
+
+/* contact me  code */
+.Contact-me {
+     background-color: #eedccb;
+
+
+}
+
+.contact-me h2 {
+     margin-bottom: 3rem;
+
+
+}
+
+.contact-me form {
+     max-width: 80rem;
+     margin: 1rem auto;
+     text-align: center;
+     margin-bottom: 3rem;
+}
+
+form .input-box {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+
+.contact-me form .input-box input,
+.contact-me form textarea {
+     width: 100%;
+     padding: 1.5rem;
+     font-size: 1.6rem;
+     color: white;
+     background: transparent;
+     border-radius: 0.8rem;
+     border: 0.25rem solid var(--main-color);
+     margin: 0.7rem 0;
+     resize: none;
+}
+
+.contact-me form .input-box input {
+     width: 49%;
+     margin: 0.7rem 0.35rem;
+}
+
+.contact-me form .btn {
+     border: 2px solid var(--main-color);
+     cursor: pointer;
+}
+
+.contact {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 50px;
+     font-weight: 600;
+     gap: 10px;
+}
+
+.contact-me form .btn {
+     margin-top: 2rem;
+}
+
+.contact-me form input::placeholder {
+     color: black;
+
+}
+
+.contact-me textarea::placeholder {
+     color: black;
+
+}
+
+
+.footer {
+     position: relative;
+     bottom: 0;
+     width: 100%;
+     padding: 40px 0;
+}
+
+.social-media {
+     text-align: center;
+}
+
+.footer .copyright {
+     margin-top: 20px;
+     text-align: center;
+     font-size: 16px;
+
+}
+
+#menu-icon {
+
+     font-size: 3.6rem;
+     color: white;
+     cursor: pointer;
+     display: none;
+}
+
+
+
+/* Responsiveness Code */
+
+@media (max-width: 1200px) {
+     html {
+          font-size: 55%;
+     }
+
+}
+
+@media (max-width: 991px) {
+     .header {
+          padding: 2rem 3%;
+     }
+
+     section {
+          padding: 10rem 3%;
+     }
+
+     .contact form .input-box input {
+          width: 100%;
+     }
+
+     .footer {
+          padding: 2rem 3%;
+     }
+}
+
+@media (max-width: 991px) {
+     #menu-icon {
+          display: block;
+
+     }
+
+     .navbar {
+          position: absolute;
+          top: 100%;
+          right: -100%;
+          width: 255px;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          background-color: var(--main-color);
+          transition: all 0.5s ease;
+          backdrop-filter: blur(10px);
+     }
+
+     .navbar a {
+          display: block;
+          padding: 17px;
+          font-size: 22px;
+
+     }
+
+     .navbar .active {
+          right: 0;
+     }
+
+     .home {
+          flex-direction: column;
+
+
+     }
+
+     .home-content h3 {
+          font-size: 2.6rem;
+
+     }
+
+     .home-content h1 {
+          font-size: 5rem;
+     }
+
+     .home-content {
+          order: 2;
+          margin-left: 1rem;
+     }
+
+
+
+     .home-content img {
+          width: 70vw;
+          margin-top: 4rem;
+     }
+
+     .about {
+          flex-direction: column-reverse;
+     }
+
+     .about-img img {
+          width: 70vw;
+          margin-top: 4rem;
+     }
+
+     .services h2 {
+          margin-bottom: 3rem;
+
+     }
+
+}
+
+@media (max-width: 617px)
+{
+      .image img{
+           width: 70vw;
+           margin-top: 8rem;
+      }
+}
+
+@media (max-width: 617px){
+      html{
+           font-size: 50%;
+           
+      }
+}
+
+
+
+
+
+#Photoshop{
+      height: 100px;
+      width: 100px;
+}
+
+#illustrator{
+     height: 96px;
+     width: 96px;
+}
+
+#Lr{
+     height: 100px;
+     width: 100px;
+}
+
+
+.Photoshop{
+    
+    
+
+     background-color: #eedccb;
+     gap: 2rem;
+     margin-top: 10px;
+}
+
+.Photoshop p{
+     font-size: 2rem;
+     margin: 2rem 0 3rem;
+}
+
+.Photoshop img{
+      height: 25vh;
+      width: 25vw;
+          border-radius: 10px;
+          margin:15px
+
+}
+
+.Illustrator {
+     display: block; /* Make sure the section is treated as a block element */
+     margin: 10px auto; /* Center the section horizontally */
+     padding: 2rem;
+     background-color: rgba(129, 126, 126, 0.555);
+     gap: 2rem;
+     max-width: 100%;
+     overflow-x: hidden;
+     min-height: 25vh;
+}
+
+.Illustrator p {
+     font-size: 2rem;
+     margin: 2rem 0 3rem;
+     text-align: center; /* Center the paragraph text */
+}
+
+.Illustrator img {
+     width: 500px; /* Set a fixed width */
+     height: 500px; /* Set a fixed height */
+     object-fit: cover; /* Ensure the image covers the box without distorting */
+     border-radius: 10px;
+     margin: 10px auto; /* Use auto margins to center the images */
+     display: block; /* Ensure images are treated as block elements */
+}
+
+.Illustrator img:last-child {
+     margin-right: 0; /* Ensures no extra margin after the last image */
+}
+
+/* Default styling for images in Photoshop and Illustrator sections */
+.Photoshop img,
+.Illustrator img {
+    width: 25vw;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    transition: 0.3s ease;  /* Transition effect for smooth hover */
+}
+
+/* Hover effect to scale the image and add shadow just like in My Service */
+.Photoshop img:hover,
+.Illustrator img:hover {
+    transform: scale(1.02);  /* Slightly scale the image on hover */
+
+}
+
+.last-logo{
+    max-height: 25vh
+}
+
+.last-logo h1{
+      font-weight: 600;
+      font-size: 60px;
+      display: flex;
+      justify-content: center
+     }
+
+.last-logo img{
+     position: relative;
+     width: 500px;
+     height: 500px;
+    left: 550px;
+    border-radius: 15px
+   
+}
+.last-logo p{
+     font-size: 2rem;
+     margin: 2rem 0 3rem;
+     text-align: center; /* Center the paragraph text */
+      
+}
+
+
+
+
+/* General Contact Section Styling */
+/* General Contact Section Styling */
+.Contact-me {
+     display: flex;
+     flex-direction: column; /* Align elements vertically */
+     justify-content: center;
+     align-items: center;
+     gap: 2rem; /* Adjusted spacing between sections */
+     padding: 3rem 1.5rem; /* Added space around the section */
+     text-align: center;
+     margin-bottom: 0; /* Remove any extra gap at the bottom */
+ }
+ 
+ /* Contact Heading Styling */
+ .contact {
+     font-size: 3.75rem; /* Adjusted font size for responsiveness */
+     font-weight: 600;
+ }
+ 
+ .contact span {
+     color: var(--main-color); /* Styling for the 'Me' part */
+ }
+ 
+ /* Paragraph Styling */
+ .contact-me p {
+     font-size: 1.8rem; /* Slightly smaller font for readability */
+     color: #555; /* Softer text color for better readability */
+     margin: 1rem 0 2rem;
+     max-width: 800px; /* Restrict paragraph width for better readability */
+ }
+ 
+ /* Social Media Icons Container */
+ .socials {
+     display: flex;
+     gap: 2rem;
+     justify-content: center;
+     align-items: center;
+     margin-top: 2rem;
+ }
+ 
+ .socials a {
+     font-size: 3rem; /* Adjusted size of icons */
+     color: #333; /* Default color for icons */
+     transition: color 0.3s ease;
+ }
+ 
+ .socials a:hover {
+     color: var(--main-color); /* Change color on hover */
+ }
+ 
+ /* Footer Styling */
+ .contact-me p:last-of-type {
+     font-size: 1.5rem;
+     color: #999; /* Softer text color */
+     margin-top: 3rem; /* Added space for the footer */
+ }
+ 
+ /* Responsive Styling */
+ @media (max-width: 991px) {
+     .contact {
+         font-size: 2.8rem; /* Adjusted heading size for smaller screens */
+     }
+     .contact-me p {
+         font-size: 1.6rem; /* Smaller text on mobile */
+     }
+     .socials {
+         gap: 1.5rem; /* Adjust gap between icons for smaller screens */
+     }
+     .socials a {
+         font-size: 2.5rem; /* Smaller icons for mobile */
+     }
+ }
+
+
+ #whatsapp {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     color: black;
+     border-radius: 50%;
+     padding: 1rem;
+     text-decoration: none;
+     font-size: 2.5rem; /* Adjust size */
+     margin: 0.5rem;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+ }
+ 
+ #whatsapp i {
+     font-size: 3rem; /* Larger icon size */
+     margin-right: 0.5rem; /* Space between icon and text */
+ }
+ 
+ #whatsapp:hover {
+     background-color: var(--main-color); /* WhatsApp darker green on hover */
+     transform: scale(1.1); /* Slightly increase size on hover */
+ }
+ 
+ #whatsapp span {
+     font-size: 1.5rem; /* Adjust text size */
+ }
+
+
+/* Default styles for larger screens */
+#menu-icon {
+     font-size: 3.6rem;
+     color: white;
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+ 
+ #menu-icon:hover {
+     background-color: #4e4b3a;
+     width: 4rem;
+     height: 4rem;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     transform: scale(1.1);
+ }
+ 
+ .navbar {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     list-style: none;
+ }
+ 
+ .navbar a {
+     color: white;
+     text-decoration: none;
+     padding: 1rem;
+ }
+ 
+ /* Responsive styles for smaller screens */
+ @media screen and (max-width: 991px) {
+     #menu-icon {
+         display: block;  /* Show the hamburger icon */
+     }
+ 
+     .navbar {
+         display: none; /* Hide the navbar initially on smaller screens */
+         flex-direction: column;
+         width: 100%;
+         background-color: #333;
+         position: absolute;
+         top: 60px;
+         left: 0;
+     }
+ 
+     .navbar.active {
+         display: flex; /* Show navbar when active class is added */
+     }
+ 
+     .navbar a {
+         padding: 1.5rem;
+         text-align: center;
+         border-bottom: 1px solid #444;
+     }
+ 
+     .navbar a:hover {
+         background-color: #575757;
+     }
+ 
+     /* Initially hide the menu icon */
+     .navbar a {
+         color: #fff;
+     }
+ }
+ 
+ /* Ensure navbar and menu icon behave well on larger screens */
+ @media screen and (min-width: 992px) {
+     #menu-icon {
+         display: none;  /* Hide the hamburger icon on larger screens */
+     }
+ 
+     .navbar {
+         display: flex; /* Show the navbar in the normal horizontal layout */
+         flex-direction: row;
+     }
+ }
+ 
